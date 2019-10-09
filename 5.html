@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body>
+<script>
+    function min(a,b,c) {
+        let min =a;
+       let k = [a,b,c]
+        for(let i = 1 ; i <3;i++){
+            if(min >k[i]){
+                min = k[i] ;
+            }
+        }
+        return min ;
+    }
+    let a = parseInt(prompt('nhập vào số thứ nhất '));
+    let b = parseInt(prompt('nhập vào số thứ hai '));
+    let c = parseInt(prompt('nhập vào số thứ ba'));
+    alert('số nhỏ nhất trong ba số là : ' + min(a,b,c));
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+<script>
+    function giaithua(n) {
+        if(n>1){let c = n*giaithua(n-1);
+        return c}
+        else {return n=1;}
+
+    }
+    let n = parseInt(prompt('nhập vào một số'))
+    alert(n+'!'+ ' = '+ giaithua(n));
+</script>
+</body>
+</html>

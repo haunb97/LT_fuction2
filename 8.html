@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+<script>
+    function daonguoc(n) {
+        let a = n.length;
+        let c = 0;
+        for (let i = 0; i < (n.length) / 2; i++) {
+            c = n[i];
+            n[i] = n[a - 1];
+            n[a - 1] = c;
+            if (a > (n.length / 2)) {
+                a--;
+            }
+        }
+        alert(n);
+    }
+    let limit = parseInt(prompt('nhập vào độ dài của mảng số nguyên'));
+    let n = [];
+        for(let i = 0 ;i<limit;i++){n[i] = parseInt(prompt('nhập vào các số nguyên'))};
+     daonguoc(n);
+
+</script>
+</body>
+</html>

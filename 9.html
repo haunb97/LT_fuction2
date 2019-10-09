@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+</head>
+<body>
+<script>
+    let str = prompt('nhập vào mảng kí tự của bạn');
+    str.substr();
+    let count =0 ;
+    let a = str.length ;
+    let kitu = prompt('nhập vào kí tự muốn tìm kiếm');
+    function search(kit) {
+        for(let i = 0 ; i<a ; i++ ){
+            if(str[i]==kit){
+                count ++; }
+        }return count;
+        return -1;
+
+    }
+    alert(search(kitu));
+</script>
+</body>
+</html>
